@@ -1,18 +1,21 @@
 import { PortableText } from "@portabletext/react";
 import { urlFor } from "@/sanity/lib/image";
-import { POST_QUERYResult, SanityImageAsset } from "@/sanity.types";
+import { POST_QUERYResult } from "@/sanity.types";
+import { SanityImage } from "./sanity-image";
+import { GoBackButton } from "./go-back";
+import type { Image as SanityImg } from "sanity";
 import Image from "next/image";
 import Link from "next/link";
 import moment from "moment";
-import { ArrowLeftIcon } from "@sanity/icons";
-import { SanityImage } from "./sanity-image";
-import type { Image as SanityImg } from "sanity";
-import { GoBackButton } from "./go-back";
+import CodeBlock from "./code-block";
 
 const PortableTextComponents = {
   types: {
     image: ({ value }: { value: SanityImg }) => {
       return <SanityImage image={value} />;
+    },
+    code: ({ value }: any) => {
+      return <CodeBlock value={value} />;
     },
   },
 };

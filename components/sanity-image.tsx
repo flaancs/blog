@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { getImageDimensions, SanityImageSource } from "@sanity/asset-utils";
 import { urlFor } from "@/sanity/lib/image";
 import type { Image as SanityImg } from "sanity";
+import Image from "next/image";
 
 export function SanityImage({ image }: { image: SanityImg }) {
   const alt: string = (image?.alt as string) ?? "Flaancs.dev";

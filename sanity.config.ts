@@ -7,7 +7,7 @@
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
-import { codeInput } from '@sanity/code-input'
+import { codeInput } from "@sanity/code-input";
 import { presentationTool } from "sanity/presentation";
 
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works

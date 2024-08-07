@@ -8,6 +8,7 @@ import { sanityFetch } from "@/sanity/lib/client";
 import Link from "next/link";
 import Image from "next/image";
 import "./globals.css";
+import { GoogleAnalytics } from "@/components/google-analytics";
 
 const fontHeading = Manrope({
   subsets: ["latin"],
@@ -61,6 +62,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <GoogleAnalytics />
       <body
         className={cn("antialiased", fontHeading.variable, fontBody.variable)}
       >

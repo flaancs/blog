@@ -4,11 +4,11 @@ import { Metadata, Viewport } from "next";
 import { TAGS_QUERYResult } from "@/sanity.types";
 import { TAGS_QUERY } from "@/sanity/lib/queries";
 import { sanityFetch } from "@/sanity/lib/client";
+import { GoogleAnalytics } from "@/components/google-analytics";
 
 import Link from "next/link";
 import Image from "next/image";
 import "./globals.css";
-import { GoogleAnalytics } from "@/components/google-analytics";
 
 const fontHeading = Manrope({
   subsets: ["latin"],
@@ -37,7 +37,7 @@ export async function generateMetadata(): Promise<Metadata> {
       locale: "es",
       images: [
         {
-          url: "/images/icon.png",
+          url: "/images/og.png",
           alt: "Flaancs.dev",
         },
       ],

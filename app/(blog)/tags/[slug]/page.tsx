@@ -28,7 +28,7 @@ export async function generateMetadata({
         locale: "es",
         images: [
           {
-            url: "/images/icon.png",
+            url: "/images/og.png",
             alt: tag.name || "Flaancs.dev",
           },
         ],
@@ -47,7 +47,7 @@ export async function generateMetadata({
       locale: "es",
       images: [
         {
-          url: "/images/icon.png",
+          url: "/images/og.png",
           alt: "Flaancs.dev",
         },
       ],

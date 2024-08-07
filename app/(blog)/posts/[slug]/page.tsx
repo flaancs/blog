@@ -35,7 +35,7 @@ export async function generateMetadata({
           {
             url: post.mainImage?.asset?._ref
               ? urlFor(post.mainImage?.asset?._ref).width(300).height(300).url()
-              : "/images/icon.png",
+              : "/images/og.png",
             alt: post.mainImage?.alt || "Flaancs.dev",
           },
         ],
@@ -54,7 +54,7 @@ export async function generateMetadata({
       locale: "es",
       images: [
         {
-          url: "/images/icon.png",
+          url: "/images/og.png",
           alt: "Flaancs.dev",
         },
       ],

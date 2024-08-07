@@ -1,11 +1,11 @@
 import { POSTS_QUERYResult } from "@/sanity.types";
 import { ArrowRightIcon } from "@sanity/icons";
+import { urlFor } from "@/sanity/lib/image";
 import moment from "moment";
 import Link from "next/link";
 import Image from "next/image";
 
 import "moment/locale/es";
-import { urlFor } from "@/sanity/lib/image";
 moment.locale("es");
 
 export function Posts({ posts }: { posts: POSTS_QUERYResult }) {
